@@ -4,7 +4,6 @@ var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var watch = require('gulp-watch');
 var minifyCSS = require('gulp-minify-css');
-var cleanCSS = require('gulp-clean-css');
 var webserver = require('gulp-webserver');
 
 gulp.task('script', function(){
@@ -26,13 +25,18 @@ gulp.task('watch', function() {
   gulp.watch('assets/sass/*.scss', ['style']);
 });
 
+gulp.task('watchjs', function() {
+    gulp.watch('assets/js/*.js', ['script']);
+});
+
 gulp.task('webserver', function(){
   gulp.src('../gulpie/')
       .pipe(webserver({
-        fallback: 'index.html',
+        fallback: 'welcome.html',
         livereload: true,
         directoryListing: false,
         open: true
       }));
+});
 
-gulp.task('default', ['script', 'style', 'watch', 'webserver']);
+gulp.task('default', ['script', 'style', 'watch', 'watchjs', 'webserver']);
