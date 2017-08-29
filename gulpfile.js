@@ -30,7 +30,7 @@ gulp.task('watchjs', function() {
 });
 
 gulp.task('webserver', function(){
-  gulp.src('../gulpie/')
+  gulp.src('../desafio-servipag/')
       .pipe(webserver({
         fallback: 'index.html',
         livereload: true,
