@@ -32,7 +32,7 @@ gulp.task('watchjs', function() {
 gulp.task('webserver', function(){
   gulp.src('../gulpie/')
       .pipe(webserver({
-        fallback: 'welcome.html',
+        fallback: 'index.html',
         livereload: true,
         directoryListing: false,
         open: true
