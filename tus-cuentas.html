@@ -3,63 +3,71 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <title>Tus Gastos</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.min.css">
-    <title>Tus Gastos</title>
 </head>
 <body id="gastos">
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo center">CUENTAS</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="left hide-on-med-and-down">
-        <li><a href="home.html"><i class="material-icons">home</i>Home</a></li>
-        <li><a href="profile.html"><i class="material-icons">account_circle</i>Perfil</a></li>
-        <li><a href="pago.html"><i class="material-icons">assessment</i>Historial de cuentas</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="home.html"><i class="material-icons">home</i>Home</a></li>
-        <li><a href="profile.html"><i class="material-icons">account_circle</i>Perfil</a></li>
-        <li><a href="pago.html"><i class="material-icons">assessment</i>Historial de Cuentas</a></li>
-      </ul>
-    </div>
-  </nav>
-    <div class="row">
-        <div class="col s12 m12 l12">
-            <div class="input-field col s12">
-                <select>
-                  <option value="" disabled selected>pagos inscritos</option>
-                  <option value="1">agua</option>
-                  <option value="2">luz</option>
-                  <option value="3">gas</option>
-                  <option value="3">cable</option>
-                </select>
-                <label>Mis cuentas</label>
+    <nav>
+        <ul id="slide-out" class="side-nav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="assets/img/cuentas.png">
+                    </div>
+                    <a href="#!user"><img src="assets/img/profile.jpg" class="responsive-img circle"></a>
+                    <a href="#!name"><span class="grey-text text-darken-3 name">Pascuala Pérez</span></a>
+                    <a href="#!email"><span class="grey-text email">pascualaperez@gmail.com</span></a>
+                </div>
+            </li>
+            <li><a href="home.html"><i class="material-icons">home</i>Home</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="profile.html"><i class="material-icons">account_circle</i>Perfil</a></li>
+            <li><div class="divider"></div></li>
+            <li><a href="pago.html"><i class="material-icons">assessment</i>Historial de cuentas</a></li>
+            <li><div class="divider"></div></li>
+        </ul>
+        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="row info-perfil">
+                <div class="col s3">
+                    <img src="assets/img/profile.jpg" class="responsive-img circle img-perfil">
+                </div>
+                <div class="col s9">
+                    <h5>Pascuala Pérez</h5>
+                    <h6>123456789-k</h6>
+                    <span id="mes">MES: </span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="cols3">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <div class="donut-chart center">
+                    <img src="dist/img/chart.png" height="200">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <h5>Últimos 12 meses</h5><span class="promedio12">$12.345.067</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="tip">
+                    <h4>Ahorro Tip!</h4>
+                    <div class="ahorro-tip"></div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col s12 m12 l12">
-            <div class="donut-chart center">
-                <img src="dist/img/chart.png" height="200">
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col s12 m12 l12">
-            <h5>Últimos 12 meses</h5><span class="promedio12">$12.345.067</span>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col s12 m12 l12">
-            <div class="tip">
-                <h4>Ahorro Tip!</h4>
-                <div class="ahorro-tip"></div>
-            </div>
-        </div>
-    </div>
-
-    <script type="text/javascript" src="dist/js/script.js"></script>
+</section>
+<script type="text/javascript" src="dist/js/script.js"></script>
 </body>
-
 </html>

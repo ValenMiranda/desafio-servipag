@@ -20272,8 +20272,7 @@ if (Vel) {
 
     $.error('Method ' + methodOrOptions + ' does not exist on jQuery.tap-target');
   };
-})(jQuery);
-
+)(jQuery);
 var data = [
 	{"id":0,
 	"nombre": "Pascuala Pérez",
@@ -20734,9 +20733,8 @@ $(document).ready(function(){
 	$('.carousel.carousel-slider').carousel({
 		fullWidth: true
 	});
-	autoplay()   
+	autoplay()
 function autoplay() {
     $('.carousel').carousel('next');
     setTimeout(autoplay, 4500);
 }
-});

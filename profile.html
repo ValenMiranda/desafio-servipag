@@ -9,20 +9,25 @@
 </head>
 <body>
   <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo center">PERFIL</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="left hide-on-med-and-down">
+    <ul id="slide-out" class="side-nav">
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="assets/img/cuentas.png">
+                </div>
+                <a href="#!user"><img src="assets/img/profile.jpg" class="responsive-img circle"></a>
+                <a href="#!name"><span class="grey-text text-darken-3 name">Pascuala Pérez</span></a>
+                <a href="#!email"><span class="grey-text email">pascualaperez@gmail.com</span></a>
+            </div>
+        </li>
         <li><a href="home.html"><i class="material-icons">home</i>Home</a></li>
+        <li><div class="divider"></div></li>
         <li><a href="profile.html"><i class="material-icons">account_circle</i>Perfil</a></li>
+        <li><div class="divider"></div></li>
         <li><a href="pago.html"><i class="material-icons">assessment</i>Historial de cuentas</a></li>
-      </ul>
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="home.html"><i class="material-icons">home</i>Home</a></li>
-        <li><a href="profile.html"><i class="material-icons">account_circle</i>Perfil</a></li>
-        <li><a href="pago.html"><i class="material-icons">assessment</i>Historial de Cuentas</a></li>
-      </ul>
-    </div>
+        <li><div class="divider"></div></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
   </nav>
   <section id="profile">
     <div class="container-fluid">
