@@ -10,7 +10,6 @@ $( document ).ready(function(){
     $("#nickname-agua").append(el.cuentas[0].nick);
     $("#id-agua").append(el.cuentas[0].identificador);
 
-
     $("#nickname-luz").append(el.cuentas[1].nick);
     $("#id-luz").append(el.cuentas[1].identificador);
 

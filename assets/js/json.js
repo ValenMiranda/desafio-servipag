@@ -419,16 +419,12 @@ $.each(data, function(i, item) {
         var anio2016 = el.monto_pagar;
         //console.log(anio2016);
         var parse2016 = JSON.parse(anio2016);
-
-        console.log(parse2016);
     });
 
     $.each(cuenta2, function(i, el) {
         var anio2017 = el.monto_pagar;
         //console.log(anio2017);
         var parse2017 = JSON.parse(anio2017);
-        console.log(parse2017);
-
     });
 });
 
@@ -443,16 +439,12 @@ $.each(data, function(i, item) {
         var anio2016 = el.monto_pagar;
         //console.log(anio2016);
         var parse2016 = JSON.parse(anio2016);
-
-        console.log(parse2016);
     });
 
     $.each(cuenta2, function(i, el) {
         var anio2017 = el.monto_pagar;
         //console.log(anio2017);
         var parse2017 = JSON.parse(anio2017);
-        console.log(parse2017);
-
     });
 });
 //array boletas tag
@@ -460,22 +452,16 @@ $.each(data, function(i, item) {
     var cuenta1 = item.cuentas[3].boletas[0][2016];
     var cuenta2 = item.cuentas[3].boletas[0][2017];
 
-
-
     $.each(cuenta1, function(i, el) {
         var anio2016 = el.monto_pagar;
         //console.log(anio2016);
         var parse2016 = JSON.parse(anio2016);
-
-        console.log(parse2016);
     });
 
     $.each(cuenta2, function(i, el) {
         var anio2017 = el.monto_pagar;
         //console.log(anio2017);
         var parse2017 = JSON.parse(anio2017);
-        console.log(parse2017);
-
     });
 });
 //array boletas television
@@ -483,24 +469,16 @@ $.each(data, function(i, item) {
     var cuenta1 = item.cuentas[4].boletas[0][2016];
     var cuenta2 = item.cuentas[4].boletas[0][2017];
 
-
-
     $.each(cuenta1, function(i, el) {
         var anio2016 = el.monto_pagar;
         //console.log(anio2016);
         var parse2016 = JSON.parse(anio2016);
-
-        console.log(parse2016);
     });
 
     $.each(cuenta2, function(i, el) {
         var anio2017 = el.monto_pagar;
         //console.log(anio2017);
         var parse2017 = JSON.parse(anio2017);
-        console.log(parse2017);
-
     });
-
-
 
 });

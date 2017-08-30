@@ -2,88 +2,86 @@
 <html>
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Tus Gastos</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="dist/css/style.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <title>Tus Gastos</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body id="gastos">
-    <nav>
-        <ul id="slide-out" class="side-nav">
-            <li>
-                <div class="user-view">
-                    <div class="background">
-                        <img src="assets/img/cuentas.png">
-                    </div>
-                    <a href="#!user"><img src="assets/img/profile.jpg" class="responsive-img circle"></a>
-                    <a href="#!name"><span class="grey-text text-darken-3 name">Pascuala Pérez</span></a>
-                    <a href="#!email"><span class="grey-text email">pascualaperez@gmail.com</span></a>
-                </div>
-            </li>
-            <li><a href="home.html"><i class="material-icons">home</i>Home</a></li>
-            <li><div class="divider"></div></li>
-            <li><a href="profile.html"><i class="material-icons">account_circle</i>Perfil</a></li>
-            <li><div class="divider"></div></li>
-            <li><a href="pago.html"><i class="material-icons">assessment</i>Historial de cuentas</a></li>
-            <li><div class="divider"></div></li>
-        </ul>
-        <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
-    </nav>
-    <section>
-        <div class="container">
-            <div class="row info-perfil">
-                <div class="col s3">
-                    <img src="assets/img/profile.jpg" class="responsive-img circle img-perfil">
-                </div>
-                <div class="col s9">
-                    <h5>Pascuala Pérez</h5>
-                    <h6>123456789-k</h6>
-                    <span id="mes">MES: </span>
-                </div>
-            </div>
+  <nav>
+    <ul id="slide-out" class="side-nav">
+      <li>
+        <div class="user-view">
+          <div class="background">
+            <img src="assets/img/cuentas.png">
+          </div>
+          <a href="#!user"><img src="assets/img/profile.jpg" class="responsive-img circle"></a>
+          <a href="#!name"><span class="grey-text text-darken-3 name">Pascuala Pérez</span></a>
+          <a href="#!email"><span class="grey-text email">pascualaperez@gmail.com</span></a>
         </div>
-        <div class="row">
-       <div class="col s12 m12 l12">
-           <div class="icons">
-               <div class="agua">
-                   <img src="dist/img/water_green.png" alt="">
-               </div>
-               <div class="television">
-                   <img src="dist/img/tv_green.png" alt="">
-               </div>
-               <div class="luz">
-                   <img src="dist/img/light_yellow.png" alt="">
-               </div>
-               <div class="tag">
-                   <img src="dist/img/car_red.png" alt="">
-               </div>
-               <div class="gas">
-                   <img src="dist/img/fire_red.png" alt="">
-               </div>
-           </div>
-           <div class="donut-chart center">
-               <div id="holder"></div>
-           </div>
-       </div>
-   </div>
-   <div class="row">
-       <div class="col s12 m12 l12">
-           <p id="totalMes"><small>Total mes</small></p>
-       </div>
-   </div>
-   <div class="row">
-       <div class="col s12 m12 l12 center-align">
-           <div class="tip">
-               <h5>Ahorro Tip!</h5>
-               <div class="ahorro-tip"></div>
-           </div>
-           <div class="cerdito">
-               <img src="dist/img/pig.png" alt="">
-           </div>
-       </div>
-   </div>
-</section>
-<script type="text/javascript" src="dist/js/script.js"></script>
+      </li>
+      <li><a href="tus-cuentas.html"><i class="material-icons">home</i>Home</a></li>
+      <li><div class="divider"></div></li>
+      <li><a href="profile.html"><i class="material-icons">account_circle</i>Perfil</a></li>
+      <li><div class="divider"></div></li>
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+  </nav>
+  <section>
+    <div class="container">
+      <div class="row info-perfil">
+        <div class="col s3">
+          <img src="assets/img/profile.jpg" class="responsive-img circle img-perfil">
+        </div>
+        <div class="col s9">
+          <h5>Pascuala Pérez</h5>
+          <h6 class="grey-text">123456789-k</h6>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <div class="icons">
+            <div class="agua">
+              <a href="agua.html"><img src="dist/img/water_green.png" alt=""></a>
+            </div>
+            <div class="television">
+              <a href="casa.html"><img src="dist/img/tv_green.png" alt=""></a>
+            </div>
+            <div class="luz">
+              <a href="luz.html"><img src="dist/img/light_yellow.png" alt=""></a>
+            </div>
+            <div class="tag">
+              <a href="tag.html"><img src="dist/img/car_red.png" alt=""></a>
+            </div>
+            <div class="gas">
+              <a href="gas.html"><img src="dist/img/fire_red.png" alt=""></a>
+            </div>
+          </div>
+          <div class="donut-chart center">
+            <div id="holder"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row dato-pago center">
+        <p><b>Pago mes de Julio: </b> $117.180</p>
+        <p><b>Proyección mes siguiente: </b> $137.255</p>
+      </div>
+      <div class="row">
+        <div class="col s12 m12 l12 center-align">
+          <div class="tip">
+            <h5>Ahorro Tip!</h5>
+            <div class="ahorro-tip"></div>
+          </div>
+          <div class="cerdito">
+            <img src="dist/img/pig.png" class="responsive-img" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="dist/js/script.js"></script>
 </body>
 </html>

@@ -2,3 +2,8 @@
   background-color: $yellow;
   color: #333;
 }
+
+@mixin icons{
+    width: 25%;
+    font-size: 52px;
+}
