@@ -3,10 +3,13 @@
 		color: $yellow;
 	    font-size: 40px;
 	    font-weight: 600;
-	    margin: 100px auto;
+	    margin: 70px auto;
 	}
-	.btn{
-	margin: 20px auto;
-	@include boton();
+	.options{
+		margin-top: 50px;
+		.btn{
+			margin: 20px auto;
+			@include boton();
+		}
 	}	
 }
