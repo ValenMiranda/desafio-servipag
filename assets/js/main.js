@@ -1,6 +1,16 @@
 $( document ).ready(function(){
   $(".button-collapse").sideNav();
 
+  data.forEach(function(el) {
+    console.log(el.rut);
+
+    $("#name").append(el.nombre);
+    $("#email").append(el.email);
+    $("#rut").append(el.rut);
+
+  });
+
+
   if(localStorage.img) {
     //debugger;
     $('#bannerImg').attr('src', localStorage.img);
