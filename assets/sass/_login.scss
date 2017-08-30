@@ -1,0 +1,12 @@
+.container{
+	.brand-logo{
+		color: $yellow;
+	    font-size: 40px;
+	    font-weight: 600;
+	    margin: 100px auto;
+	}
+	.btn{
+	margin: 20px auto;
+	@include boton();
+	}	
+}
