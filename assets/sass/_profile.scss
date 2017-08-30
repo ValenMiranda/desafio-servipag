@@ -5,8 +5,7 @@ nav{
 .btn-cuentas{
   width: 300px;
   margin: 10% 0;
-  color: #333;
-  background-color: $yellow;
+  @include boton();
 }
 
 .profile-img {

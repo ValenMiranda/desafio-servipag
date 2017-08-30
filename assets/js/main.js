@@ -1,5 +1,13 @@
 $( document ).ready(function(){
   $(".button-collapse").sideNav();
+  $('select').material_select();
+
+  data.forEach(function(el) {
+    $("#name").append(el.nombre);
+    $("#email").append(el.email);
+    $("#rut").append(el.rut);
+  });
+
 
   if(localStorage.img) {
     //debugger;
