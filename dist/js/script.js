@@ -20272,7 +20272,8 @@ if (Vel) {
 
     $.error('Method ' + methodOrOptions + ' does not exist on jQuery.tap-target');
   };
-)(jQuery);
+})(jQuery);
+
 var data = [
 	{"id":0,
 	"nombre": "Pascuala Pérez",
@@ -20284,7 +20285,7 @@ var data = [
 			{
 				"categoria" : "Agua",
 				"identificador" : "18846098",
-				"nick-cuenta" : "Agua casa",
+				"nick" : "Agua casa",
 				"boletas" : [
 					{
 						"2016":[
@@ -20366,7 +20367,7 @@ var data = [
 			{
 				"categoria" : "Luz",
 				"identificador" : "28932952",
-				"nick-cuenta" : "Luz casa",
+				"nick" : "Luz casa",
 				"boletas" : [
 					{
 						"2016":[
@@ -20447,7 +20448,7 @@ var data = [
 			{
 				"categoria" : "Gas",
 				"identificador" : "87695412",
-				"nick-cuenta" : "Gas casa",
+				"nick" : "Gas casa",
 				"boletas" : [
 					{
 						"2016":[
@@ -20525,8 +20526,8 @@ var data = [
 			/*Tag*/
 			{
 				"categoria" : "Pago total TAG",
-				"identificador" : "",
-				"nick-cuenta" : "Tag",
+				"identificador" : "7723461",
+				"nick" : "Tag",
 				"boletas" : [
 					{
 						"2016":[
@@ -20596,7 +20597,7 @@ var data = [
 			{
 				"categoria" : "Servicio telefonía fija",
 				"identificador" : "028504374",
-				"nick-cuenta" : "VTR hogar",
+				"nick" : "VTR hogar",
 				"boletas" : [
 					{
 						"2016":[
@@ -20684,6 +20685,23 @@ $( document ).ready(function(){
     $("#name").append(el.nombre);
     $("#email").append(el.email);
     $("#rut").append(el.rut);
+
+    $("#nickname-agua").append(el.cuentas[0].nick);
+    $("#id-agua").append(el.cuentas[0].identificador);
+
+
+    $("#nickname-luz").append(el.cuentas[1].nick);
+    $("#id-luz").append(el.cuentas[1].identificador);
+
+    $("#nickname-gas").append(el.cuentas[2].nick);
+    $("#id-gas").append(el.cuentas[2].identificador);
+
+    $("#nickname-tag").append(el.cuentas[3].nick);
+    $("#id-tag").append(el.cuentas[3].identificador);
+
+    $("#nickname-casa").append(el.cuentas[4].nick);
+    $("#id-casa").append(el.cuentas[4].identificador);
+
   });
 
 
@@ -20710,6 +20728,7 @@ $( document ).ready(function(){
   $(".upload-button").on('click', function() {
     $(".file-upload").click();
   });
+
 })
 
 var tipsLuz = [
@@ -20738,3 +20757,4 @@ function autoplay() {
     $('.carousel').carousel('next');
     setTimeout(autoplay, 4500);
 }
+});

@@ -6,6 +6,23 @@ $( document ).ready(function(){
     $("#name").append(el.nombre);
     $("#email").append(el.email);
     $("#rut").append(el.rut);
+
+    $("#nickname-agua").append(el.cuentas[0].nick);
+    $("#id-agua").append(el.cuentas[0].identificador);
+
+
+    $("#nickname-luz").append(el.cuentas[1].nick);
+    $("#id-luz").append(el.cuentas[1].identificador);
+
+    $("#nickname-gas").append(el.cuentas[2].nick);
+    $("#id-gas").append(el.cuentas[2].identificador);
+
+    $("#nickname-tag").append(el.cuentas[3].nick);
+    $("#id-tag").append(el.cuentas[3].identificador);
+
+    $("#nickname-casa").append(el.cuentas[4].nick);
+    $("#id-casa").append(el.cuentas[4].identificador);
+
   });
 
 
@@ -32,4 +49,5 @@ $( document ).ready(function(){
   $(".upload-button").on('click', function() {
     $(".file-upload").click();
   });
+
 })

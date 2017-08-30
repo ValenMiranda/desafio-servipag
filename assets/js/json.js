@@ -9,7 +9,7 @@ var data = [
 			{
 				"categoria" : "Agua",
 				"identificador" : "18846098",
-				"nick-cuenta" : "Agua casa",
+				"nick" : "Agua casa",
 				"boletas" : [
 					{
 						"2016":[
@@ -91,7 +91,7 @@ var data = [
 			{
 				"categoria" : "Luz",
 				"identificador" : "28932952",
-				"nick-cuenta" : "Luz casa",
+				"nick" : "Luz casa",
 				"boletas" : [
 					{
 						"2016":[
@@ -172,7 +172,7 @@ var data = [
 			{
 				"categoria" : "Gas",
 				"identificador" : "87695412",
-				"nick-cuenta" : "Gas casa",
+				"nick" : "Gas casa",
 				"boletas" : [
 					{
 						"2016":[
@@ -250,8 +250,8 @@ var data = [
 			/*Tag*/
 			{
 				"categoria" : "Pago total TAG",
-				"identificador" : "",
-				"nick-cuenta" : "Tag",
+				"identificador" : "7723461",
+				"nick" : "Tag",
 				"boletas" : [
 					{
 						"2016":[
@@ -321,7 +321,7 @@ var data = [
 			{
 				"categoria" : "Servicio telefonía fija",
 				"identificador" : "028504374",
-				"nick-cuenta" : "VTR hogar",
+				"nick" : "VTR hogar",
 				"boletas" : [
 					{
 						"2016":[
