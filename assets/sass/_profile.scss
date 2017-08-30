@@ -1,0 +1,54 @@
+nav{
+  background-color: $gray;
+}
+
+.btn-cuentas{
+  width: 300px;
+  margin: 10% 0;
+  color: #333;
+  background-color: $yellow;
+}
+
+.profile-img {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+.profile-thumb {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 50%;
+  box-shadow: 4px 5px 0 rgba(0, 0, 0, 0.1);
+  margin: 7% 25% 5%;
+  padding: 5px;
+  width: 50%;
+}
+
+.upload {
+  bottom: 10px;
+  position: absolute;
+  right: 190px;
+}
+
+.upload img {
+  cursor: pointer;
+}
+
+.file-upload {
+  display: none !important;
+}
+
+.upload-button {
+  width: 50px;
+  height: 50px;
+  background: #FFF;
+  border-radius:50%;
+  border:2px solid #CCC;
+}
+
+.upload-button img {
+  width: 30px;
+  height: 30px;
+  padding: 15px 0 0 15px;
+}

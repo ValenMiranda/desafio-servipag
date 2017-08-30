@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="dist/css/style.min.css">
-    <title>Servipag Ahorro</title>
-  </head>
-  <body>
-    <script type="text/javascript" src="dist/js/script.js"></script>
-  </body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/style.min.css">
+  <title>Servipag Ahorro</title>
+</head>
+<body>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center">PERFIL</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="home.html"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="profile.html"><i class="material-icons">account_circle</i>Perfil</a></li>
+        <li><a href="pago.html"><i class="material-icons">assessment</i>Historial de cuentas</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="home.html"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="profile.html"><i class="material-icons">account_circle</i>Perfil</a></li>
+        <li><a href="pago.html"><i class="material-icons">assessment</i>Historial de Cuentas</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col s12 m12 l6 xl6 profile-img">
+          <img class="profile-thumb" src="assets/img/profile.jpg" id="bannerImg" />
+          <div class="upload">
+            <div class="upload-button"><img src="https://tinyurl.com/mrphx9r" alt="" /></div>
+            <input class="file-upload" type="file" accept="image/*" />
+          </div>
+        </div>
+        <div class="col s12 m12 l12 xl12 datos center">
+          <p id="name" class="grey-text"><b class="black-text">Nombre: </b>Pascuala Vergara</p>
+          <p id="rut" class="grey-text"><b class="black-text">Rut: </b></p>
+          <p id="email" class="grey-text"><b class="black-text">Correo: </b>pvergara@gmail.com</p>
+          <a href="tus-cuentas.html" class="waves-effect waves-light btn-large btn-cuentas">Tus Cuentas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="text/javascript" src="dist/js/script.js"></script>
+</body>
 </html>
