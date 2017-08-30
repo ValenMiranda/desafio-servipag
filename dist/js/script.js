@@ -20679,14 +20679,12 @@ var data = [
 
 $( document ).ready(function(){
   $(".button-collapse").sideNav();
+  $('select').material_select();
 
   data.forEach(function(el) {
-    console.log(el.rut);
-
     $("#name").append(el.nombre);
     $("#email").append(el.email);
     $("#rut").append(el.rut);
-
   });
 
 
@@ -20715,9 +20713,7 @@ $( document ).ready(function(){
   });
 })
 
-$(document).ready(function() {
-    $('select').material_select();
-});
+
 var tipsLuz = [
     'No deje los equipos, que se manejan con batería, conectados mucho tiempo. Nada más enchúfelos por el tiempo necesario para cargar la batería.',
 
@@ -20746,4 +20742,15 @@ tipsLuz.forEach(function(tip, i) {
     $(".ahorro-tip").append(`<p>${tip}</p>`);
 });
 
+
 $(".ahorro-tip").append();
+$(document).ready(function(){
+	$('.carousel.carousel-slider').carousel({
+		fullWidth: true
+	});
+	autoplay()   
+function autoplay() {
+    $('.carousel').carousel('next');
+    setTimeout(autoplay, 4500);
+}
+});

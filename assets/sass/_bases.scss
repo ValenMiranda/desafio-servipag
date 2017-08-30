@@ -4,6 +4,7 @@
 	.btn{
 		margin-bottom: 50px;
 		width: 85%;
+		@include boton();
 		}
 	.carousel-item{
 		img{
