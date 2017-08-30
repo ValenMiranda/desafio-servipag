@@ -3,7 +3,7 @@ var data = [{
     "id": 0,
     "nombre": "Pascuala Pérez",
     "email": "pascualaperez@gmail.com",
-    "rut": "123456789-k",
+    "rut": "12345678-k",
     "pass": "123456",
     "cuentas": [
         /*Agua*/

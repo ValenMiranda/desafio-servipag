@@ -74,8 +74,14 @@
 	left: 38vh;
 }
 
+.click{
+	z-index: 3000;
+}
+
 .icons{
 	margin: 0;
+	z-index: 10;
+	position: relative;
     .agua{
         @include icons;
         position: relative;
@@ -114,6 +120,8 @@
     width: 17%;
 }
  */
+
+
  .grafico{
 	 	width: 95%;
     position: relative;
