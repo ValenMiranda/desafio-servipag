@@ -1,10 +1,11 @@
 /* welcome */
-
 .carousel{
 	.btn{
 		margin-bottom: 50px;
 		width: 85%;
 		@include boton();
+		background-color: $yellow;
+		color: #333;
 		}
 	.carousel-item{
 		img{
@@ -19,7 +20,58 @@
 }
 
 .tip {
-    width: 80%;
-    height: 200px;
     background-color: #fcbd10;
+    width: 100%;
+    height: 18vh;
+    border-radius: 30px;
+    padding: 1%;
+	position:relative;
+	top: -6vh;
 }
+.cerdito{
+	img{
+		width: 24%;
+	    position: relative;
+	    top: -33vh;
+	    left: 18vh;
+	}
+}
+.icons{
+	.agua{
+		@include icons;
+		position: relative;
+		top: 4vh;
+    	left: 176px;
+	}
+	.television{
+		@include icons;
+		position: relative;
+	    top: -54px;
+    	left: 94px;
+	}
+	.luz{
+		@include icons;
+		position: relative;
+    	top: 13vh;
+    	left: 272px;
+	}
+	.tag{
+		@include icons;
+		position: relative;
+	    top: 12vh;
+    	left: 21vh;
+	}
+	.gas{
+		@include icons;
+		position: relative;
+	    top: -3vh;
+    	left: 34vh;
+	}
+}
+#totalMes{
+	position: relative;
+    top: -34vh;
+    left: 22.7vh;
+    width: 17%;
+}
+

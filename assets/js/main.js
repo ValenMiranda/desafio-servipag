@@ -6,6 +6,9 @@ $( document ).ready(function(){
     $("#name").append(el.nombre);
     $("#email").append(el.email);
     $("#rut").append(el.rut);
+    console.log(el);
+    
+    /*$("#totalMes").append(el.);*/
   });
 
 

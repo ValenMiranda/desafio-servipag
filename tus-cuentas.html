@@ -1,46 +1,67 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <link href=“https://fonts.googleapis.com/icon?family=Material+Icons” rel=“stylesheet”>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.min.css">
+    <script src="https://use.fontawesome.com/e81f3961b0.js"></script>
     <title>Tus Gastos</title>
 </head>
-
 <body id="gastos">
-    <div class="row">
-        <div class="col s12 m12 l12">
-            <div class="input-field col s12">
-                <select>
-                  <option value="" disabled selected>pagos inscritos</option>
-                  <option value="1">agua</option>
-                  <option value="2">luz</option>
-                  <option value="3">gas</option>
-                  <option value="3">cable</option>
-                </select>
-                <label>Mis cuentas</label>
-            </div>
-        </div>
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo center">CUENTAS</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="left hide-on-med-and-down">
+        <li><a href="home.html"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="profile.html"><i class="material-icons">account_circle</i>Perfil</a></li>
+        <li><a href="pago.html"><i class="material-icons">assessment</i>Historial de cuentas</a></li>
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="home.html"><i class="material-icons">home</i>Home</a></li>
+        <li><a href="profile.html"><i class="material-icons">account_circle</i>Perfil</a></li>
+        <li><a href="pago.html"><i class="material-icons">assessment</i>Historial de Cuentas</a></li>
+      </ul>
     </div>
+  </nav>
     <div class="row">
         <div class="col s12 m12 l12">
+            <div class="icons">
+                <div class="agua">
+                    <img src="dist/img/water_green.png" alt="">
+                </div>
+                <div class="television">
+                    <img src="dist/img/tv_green.png" alt="">
+                </div>
+                <div class="luz">
+                    <img src="dist/img/light_yellow.png" alt="">
+                </div>
+                <div class="tag">
+                    <img src="dist/img/car_red.png" alt="">
+                </div>
+                <div class="gas">
+                    <img src="dist/img/fire_red.png" alt="">
+                </div>
+            </div>
             <div class="donut-chart center">
-                <img src="dist/img/chart.png" height="200">
+                <div id="holder"></div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col s12 m12 l12">
-            <h5>Últimos 12 meses</h5><span class="promedio12">$12.345.067</span>
+            <p id="totalMes"><small>Total mes</small></p>
         </div>
     </div>
     <div class="row">
-        <div class="col s12 m12 l12">
+        <div class="col s12 m12 l12 center-align">
             <div class="tip">
-                <h4>Ahorro Tip!</h4>
+                <h5>Ahorro Tip!</h5>
                 <div class="ahorro-tip"></div>
+            </div>
+            <div class="cerdito">
+                <img src="dist/img/pig.png" alt="">
             </div>
         </div>
     </div>

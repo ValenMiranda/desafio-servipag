@@ -1,4 +1,18 @@
 @mixin boton {
- background-color: $yellow;
- color: #333;
+  background-color: $yellow;
+  color: #333;
+}
+/*tamaño iconos mi cuenta*/
+@mixin icons{
+	width: 25%;
+	font-size: 52px;
+}
+@mixin circulo{
+	width: 60px;
+    height: 60px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #5cb85c;
+    position:absolute;
 }
